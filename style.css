@@ -1,0 +1,30 @@
+* { box-sizing: border-box; margin: 0;}
+body { background-color: #2ac1bc; margin: 0 auto; width: 100%; height: 100%; color:white; font-size: 14px;}
+.container { display: flex; justify-content: center;}
+.container .top-fixed { position:fixed; z-index: 10; width: 48%;}
+.container .nav { position:fixed;  margin: 0 auto; width: 48%; display: flex; justify-content: space-between; align-items: center; margin-top: 57px;}
+.container .nav .logo img { max-width: 145px;}
+.container .nav .sns-list { display: flex; align-items: center; justify-content: space-evenly; width: 25%; list-style: none; margin-right: 50px;}
+.container .nav .sns-list li { margin-right: 20px;}
+.container .nav .sns-list li img { width: 34px; filter:brightness(0) invert(100%);}
+.container .배민앱다크 img { margin-left: 760px; margin-top: 120px; width: 200px;}
+.container #full-page .section .background-dd { overflow: hidden;}
+.container #full-page .section .background-dd img { position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.container #full-page .section .content { position:relative; height: 100vh; margin: 0 auto; width: 48%;}
+.container #full-page .s1 .content .hungry-dduck-text img {width: 440px; margin-top: 187px;}
+.container #full-page .section .content h1 {margin-bottom: 20px;}
+.container #full-page .section .content h1 img { width: 500px; margin-top: 165px;}
+.container #full-page .section .content .animation { position: absolute; right: 0; bottom: 0;}
+.container #full-page .section .content .animation .오토바이길 { position: absolute; right: 180px; bottom: 180px; width: 250px;}
+.container #full-page .section .content .animation .오토바이기사 { position: absolute; right: 140px; bottom: 140px; width: 220px;}
+.container #full-page .s2 .content .animation .오토바이움직임 { animation: move 0.8s forwards;} @keyframes move { to { right: 0; bottom: 0;}}
+.container #full-page .section .content .animation .사람들 {position: absolute; left:-390px; bottom: -250px; width: 400px;}
+.container #full-page .section .content .animation .사람들움직임 {animation: peopleUp 0.8s forwards;} @keyframes peopleUp { to {bottom: 0;}}
+.container #full-page .section .content .animation .밥 {  position: absolute; left:-400px; bottom: -430px; width: 360px;}
+.container #full-page .section .content .animation .밥움직임 {animation: peopleUp 0.8s forwards;} @keyframes peopleUp { to {bottom: 0;}}
+.container #full-page .section .content .animation .생방송 {  position: absolute; right: 80px; bottom: -550px; width: 420px;}
+.container #full-page .section .content .animation .생방송움직임 {animation: peopleUp 0.8s forwards;} @keyframes peopleUp { to {bottom: 0;}}
+.container #full-page .section .content .animation .비마트오토바이 {  position: absolute; right: -400px; bottom: 150px; width: 420px; opacity: 0;}
+.container #full-page .section .content .animation .비마트오토바이움직임 {animation: BMartMove 0.8s forwards;} @keyframes BMartMove { to { opacity: 1; right: 150px;}}
+.container #full-page .section .content .animation .배민페이 {  position: absolute; right: 50px; bottom: -530px; width: 350px;}
+.container #full-page .section .content .animation .배민페이움직임 {animation: peopleUp 0.8s forwards;} @keyframes peopleUp { to {bottom: 0;}}
