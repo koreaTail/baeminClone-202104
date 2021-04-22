@@ -1,13 +1,16 @@
 * { box-sizing: border-box; margin: 0;}
-body { background-color: #2ac1bc; margin: 0 auto; width: 100%; height: 100%; color:white; font-size: 14px;}
-.container { display: flex; justify-content: center;}
+body { background-color: #2ac1bc; margin: 0 auto; width: 100%; height: 100%; color:white; font-size: 15px; line-height: 1.45rem;}
+a { text-decoration: none; color: #333333; }
+.container { display: flex; justify-content: center; position:relative;}
 .container .top-fixed { position:fixed; z-index: 10; width: 48%;}
-.container .nav { position:fixed;  margin: 0 auto; width: 48%; display: flex; justify-content: space-between; align-items: center; margin-top: 57px;}
+.container .nav { position:fixed; margin: 0 auto; width: 48%; opacity: 0; display: flex; justify-content: space-between; align-items: center; margin-top: 57px; animation: naviShow 0.2s forwards; animation-delay: 0.8s;} @keyframes naviShow { to { opacity: 1;}}
 .container .nav .logo img { max-width: 145px;}
 .container .nav .sns-list { display: flex; align-items: center; justify-content: space-evenly; width: 25%; list-style: none; margin-right: 50px;}
 .container .nav .sns-list li { margin-right: 20px;}
 .container .nav .sns-list li img { width: 34px; filter:brightness(0) invert(100%);}
-.container .배민앱다크 img { margin-left: 760px; margin-top: 120px; width: 200px;}
+.container .nav.hide { display: none;}
+.container .배민앱다크 { position: absolute; right:-100px;}
+.container .배민앱다크 img { margin-top: 120px; width: 200px;}
 .container #full-page .section .background-dd { overflow: hidden;}
 .container #full-page .section .background-dd img { position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .container #full-page .section .content { position:relative; height: 100vh; margin: 0 auto; width: 48%;}
@@ -20,11 +23,79 @@ body { background-color: #2ac1bc; margin: 0 auto; width: 100%; height: 100%; col
 .container #full-page .s2 .content .animation .오토바이움직임 { animation: move 0.8s forwards;} @keyframes move { to { right: 0; bottom: 0;}}
 .container #full-page .section .content .animation .사람들 {position: absolute; left:-390px; bottom: -250px; width: 400px;}
 .container #full-page .section .content .animation .사람들움직임 {animation: peopleUp 0.8s forwards;} @keyframes peopleUp { to {bottom: 0;}}
-.container #full-page .section .content .animation .밥 {  position: absolute; left:-400px; bottom: -430px; width: 360px;}
+.container #full-page .section .content .animation .밥 { position: absolute; left:-400px; bottom: -430px; width: 360px;}
 .container #full-page .section .content .animation .밥움직임 {animation: peopleUp 0.8s forwards;} @keyframes peopleUp { to {bottom: 0;}}
-.container #full-page .section .content .animation .생방송 {  position: absolute; right: 80px; bottom: -550px; width: 420px;}
+.container #full-page .section .content .animation .생방송 { position: absolute; right: 80px; bottom: -550px; width: 420px;}
 .container #full-page .section .content .animation .생방송움직임 {animation: peopleUp 0.8s forwards;} @keyframes peopleUp { to {bottom: 0;}}
-.container #full-page .section .content .animation .비마트오토바이 {  position: absolute; right: -400px; bottom: 150px; width: 420px; opacity: 0;}
+.container #full-page .section .content .animation .비마트오토바이 { position: absolute; right: -400px; bottom: 150px; width: 420px; opacity: 0;}
 .container #full-page .section .content .animation .비마트오토바이움직임 {animation: BMartMove 0.8s forwards;} @keyframes BMartMove { to { opacity: 1; right: 150px;}}
-.container #full-page .section .content .animation .배민페이 {  position: absolute; right: 50px; bottom: -530px; width: 350px;}
-.container #full-page .section .content .animation .배민페이움직임 {animation: peopleUp 0.8s forwards;} @keyframes peopleUp { to {bottom: 0;}}
+.container #full-page .section .content .animation .배민페이 { position: absolute; right: 50px; bottom: -530px; width: 350px;}
+.container #full-page .section .content .animation .배민페이움직임 { animation: peopleUp 0.8s forwards;} @keyframes peopleUp { to {bottom: 0;}}
+.container #full-page .footer .content { margin-top: 130px; width: 44%;}
+.container #full-page .footer .content .main .neighborhood { display: flex; margin-bottom: 40px;}
+.container #full-page .footer .content .main .neighborhood .left-line { display: flex; flex-direction: column; margin-right: 30px;}
+.container #full-page .footer .content .main .neighborhood .left-line .fisrt-img { margin-bottom: 20px;}
+.container #full-page .footer .content .main .neighborhood .left-line img { height: 30px;}
+.container #full-page .footer .content .main .neighborhood .right-line { display: flex; flex-direction: column;}
+.container #full-page .footer .content .main .neighborhood .right-line .fisrt-img { margin-bottom: 20px;}
+.container #full-page .footer .content .main .neighborhood .right-line img { height: 30px;}
+.container #full-page .footer .content .main .sns-list { display: flex; align-items: center; list-style: none; padding: 0; width: 250px; margin-bottom: 40px;}
+.container #full-page .footer .content .main .sns-list li { margin-right: 6%;}
+.container #full-page .footer .content .main .sns-list li:first-child { margin-right: 0;}
+.container #full-page .footer .content .main .sns-list li img { width: 40px; height: 35px; margin-right: 6%; filter:brightness(0) invert(0%);}
+.container #full-page .footer .content .core-value { position: absolute; right: 165px; top: 0px; width: 176px;}
+.container #full-page .footer .content .core-value img { width: 100%;}
+.container #full-page .footer .content .Secondary-info { color: #333333;}
+.container #full-page .footer .content .Secondary-info .사업자정보확인{ background: url(./image/link-line_01@2x.png) bottom no-repeat; background-size: 100% 4px;}
+.container #full-page .footer .content .Secondary-info .대표메일{ background: url(./image/link-line_01@2x.png) bottom no-repeat; background-size: 100% 4px;}
+
+.cloneCoding {background-color: rgba(250, 250, 250, 0.5); color: rgba(0, 128, 128); width: 160px; border-radius: 10px; display: flex; justify-content: center; height: 35px; align-items: center; margin: 20px; margin-left: 0;}
+
+@media screen and (max-width:1650px) {
+    .container #full-page .footer .content .core-value { position:inherit; right:auto; top: auto; margin: 50px 0px; width: 20%;}
+    .container #full-page .footer .content { margin-top: 100px; width: 85%;}
+    .container #full-page .footer .content .core-value img { width: 100%;}
+    
+}
+
+@media  screen and (max-width:1327px) {
+    .container #full-page .section .background-dd img { height:100%; width: auto;}
+}
+
+@media screen and (max-width:1024px) {
+    *{font-size: 11.2px;}
+    .container .배민앱다크 img {margin-top: 180px; width: 150px;}
+    .container #full-page .footer .content { margin-top: 0px; width: 85%;}
+    .container #full-page .footer .content .main .neighborhood .left-line img { height: 21px;}
+    .container #full-page .footer .content .main .neighborhood .right-line img { height: 21px;}
+    .container #full-page .footer .content .core-value { position:inherit; right:auto; top: auto; margin: 50px 0px; width: 50%;}
+    .container #full-page .footer .content .core-value img { width: 100%;}
+    
+}
+@media screen and (max-width:812px) {
+    .container .nav { display: none;}
+    #full-page #글씨이미지 { position:inherit; width: 100%;}
+    #full-page #글씨이미지 img {width: 120%; margin-top: 100px;}
+    #fp-nav ul li a span, .fp-slidesNav ul li a span { display: none;}
+    #fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span {display: none;}
+}
+
+@media screen and (max-width:725px) {
+    .container #full-page .section .content .animation { position: absolute; right:-150px; bottom: 0;}
+    .container #full-page .section .content { width: 70%; margin-left: 20px;}
+}
+
+
+@media screen and (max-width:400px) {
+    .container .배민앱다크 { right:-10px;}
+    .container .배민앱다크 img { width: 60%; margin-top: 50px; margin-left:130px;}
+    .container #full-page .section .content .animation { position: absolute; right:-150px; bottom: 0;}
+    .container #full-page .section .content .animation .이미지사이즈 { width: 150px;}
+    .container #full-page .section .content .animation .비마트오토바이 { bottom: 10px;}
+    .container #full-page .section .content .animation .밥 { left: -250px;}
+    .container #full-page .section .content .animation .사람들 { left: -250px;}
+    .container #full-page .section .content .animation .오토바이길 { left: -320px; bottom: 120px;}
+    .container #full-page .section .content .animation .오토바이기사 { left: -350px;}
+    .container #full-page .s2 .content .animation .오토바이움직임 { animation: move 1.8s forwards;} @keyframes move { to { left: -200px; bottom: 0;}}
+    .container #full-page .section .content { width: 70%; margin-left: 20px;}
+}
