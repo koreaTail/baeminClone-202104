@@ -1,13 +1,15 @@
 # baeminClone-202104
 배달의민족 웹사이트 클론코딩해보기
 
-https://www.baemin.com/
-배민웹사이트를 클론코딩합니다.
 
 ![배민](https://user-images.githubusercontent.com/42027890/115679647-c376ef80-a38d-11eb-87d6-839081d24592.PNG)
 헤드 이미지
 ![배민사이트](https://user-images.githubusercontent.com/42027890/115679643-c245c280-a38d-11eb-969b-c2effdaf7183.PNG)
 섹션1이미지
+
+
+https://www.baemin.com/
+배민웹사이트를 클론코딩합니다.
 
 -----------------------------------
 
